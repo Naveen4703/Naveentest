@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+  margin: 0;
+}
+body{
+background: url(https://user-images.githubusercontent.com/63446662/126875415-0df850e9-e725-4350-bfc2-8362ec953fc4.jpg) ;
+ background-repeat: no-repeat;
+  background-size: cover; 
+  height: 100%;
+  width: 100%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    color: #fff;
+  }
+  .column img{
+    border-radius: 25px 25px 25px 25px; 
+    margin-top: 150px;
+  }
+ #img1{
+      margin-left: 125px;
+      margin-right: 65px;
+    box-shadow: 15px 15px 15px rgba(75, 73, 73, 0.7);
+   height: 300px;
+   width: 200px;
+  }
+  #img2{
+      margin-left: 90px;
+      margin-right: 15px;
+    height: 300px;
+    width: 200px;
+    box-shadow: 15px 15px 15px rgba(70, 69, 69, 0.7);
+  }
+ #img3{
+      margin-right: 85px;
+      margin-left: 40px;
+   height: 300px;
+   width: 200px;
+      box-shadow: 15px 15px 15px rgba(71,70,70, 0.7);
+  }
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+   
+}
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
